@@ -7,6 +7,7 @@ let mainWindow;
 app.on("ready", () => {
   console.log("App is ready");
 
-  mainWindow = new BrowserWindow({});
+  mainWindow = new BrowserWindow({ title: "Please wait ..." });
 
+  mainWindow.loadFile(`${__dirname}/index.html`);
 });
